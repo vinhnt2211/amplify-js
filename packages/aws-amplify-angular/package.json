@@ -73,5 +73,6 @@
 	},
 	"peerDependencies": {
 		"aws-amplify": "3.x.x"
-	}
+	},
+	"gitHead": "d46485f644ce47f5aa2172335c34a73893722f57"
 }

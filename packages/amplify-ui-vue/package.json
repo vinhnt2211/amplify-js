@@ -30,5 +30,6 @@
 		"clean": "rimraf dist",
 		"compile": "npm run tsc",
 		"tsc": "tsc -p ."
-	}
+	},
+	"gitHead": "d46485f644ce47f5aa2172335c34a73893722f57"
 }

@@ -94,5 +94,6 @@
       "lib-esm"
     ],
     "testSequencer": "./testSequencer.js"
-  }
+  },
+  "gitHead": "d46485f644ce47f5aa2172335c34a73893722f57"
 }

@@ -1,6 +1,6 @@
 {
 	"name": "@aws-amplify/datastore-storage-adapter",
-	"version": "1.1.9",
+	"version": "1.1.10-unstable.0+9a55577bb",
 	"description": "SQLite storage adapter for Amplify DataStore ",
 	"main": "./lib/index.js",
 	"module": "./lib-esm/index.js",
@@ -34,8 +34,8 @@
 	},
 	"homepage": "https://aws-amplify.github.io/",
 	"dependencies": {
-		"@aws-amplify/core": "4.3.3",
-		"@aws-amplify/datastore": "3.4.9"
+		"@aws-amplify/core": "4.3.4-unstable.0+9a55577bb",
+		"@aws-amplify/datastore": "3.4.10-unstable.0+9a55577bb"
 	},
 	"devDependencies": {
 		"react-native-sqlite-storage": "5.0.0"
@@ -90,5 +90,5 @@
 			"lib-esm"
 		]
 	},
-	"gitHead": "d46485f644ce47f5aa2172335c34a73893722f57"
+	"gitHead": "9a55577bbac0b3d6a6db2bd319a6def6a3d61e27"
 }

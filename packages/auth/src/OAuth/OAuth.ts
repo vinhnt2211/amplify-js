@@ -169,19 +169,29 @@ export default class OAuth {
 			.map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
 			.join('&');
 
-		const {
-			access_token,
-			refresh_token,
-			id_token,
-			error,
-		} = await ((await fetch(oAuthTokenEndpoint, {
+		// const {
+		// 	access_token,
+		// 	refresh_token,
+		// 	id_token,
+		// 	error,
+		// } = await ((await fetch(oAuthTokenEndpoint, {
+		// 	method: 'POST',
+		// 	headers: {
+		// 		'Content-Type': 'application/x-www-form-urlencoded',
+		// 	},
+		// 	body,
+		// })) as any).json();
+
+		const res = await fetch(oAuthTokenEndpoint, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded',
 			},
 			body,
-		})) as any).json();
-
+		});
+		console.log('11111111111');
+		console.log(res);
+		const { access_token, refresh_token, id_token, error } = await res.json();
 		if (error) {
 			throw new Error(error);
 		}
